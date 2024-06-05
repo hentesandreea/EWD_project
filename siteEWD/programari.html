@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty salon</title>
+    <style>
+        body {
+            background-image:url(imagini/bg3.jpg);
+            background-size: cover;
+            image-resolution: 100%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            justify-content: center;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding-top:30px ;
+            padding-right: 30px;
+        }
+        nav a {
+            color: rgb(71, 69, 69);
+            text-decoration: none;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .formularDiv {
+            padding: 20px;
+            background-color:  rgb(163, 98, 60);;
+            width: fit-content;
+            height: 40%;
+            border-radius: 20;
+            margin-left: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            margin-left: 2%;
+        }
+        form{
+            padding: 10px;
+        }
+       select, input[type="text"] {
+            display: block;
+            width: 250px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        button{
+            border-radius: 10px;
+            padding: 12px;
+            width: 100px;
+            color:#333 ;
+            background-color: rgba(255, 255, 255, 0.8);
+           margin-left: 90px;
+           margin-top: 10px;
+        }
+        .infoDiv {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 600px;
+            height: fit-content;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-left: 10%;
+            margin-right: 2%;
+            padding-bottom: 10px;
+        
+        }
+        .infoDiv h3 {
+            text-align: center;
+            color: #333;
+        }
+        .infoDiv p {
+            text-align: justify;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 40px;
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="servicii.html">Servicii</a>
+        <a href="programari.html">Programări</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class = 'content'>
+    <div class="formularDiv">
+        <h3 style="color: #f6f5f5; text-align: center;">Programează-te online</h3>
+        <form>
+            <label for="fname">Nume:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <br>
+            <label for="lname">Prenume:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <br>
+            <label for="lmail">E-mail:</label><br>
+            <input type="text" id="lmail" name="lmail">
+          </form>
+<br>
+ <label for="procedura">Procedura:</label><br>
+<select id="procedura">
+  <option label="Tuns">Tuns</option>
+  <option label="Tratament keratină">Tratament keratină </option>
+  <option label="Vopsit">Vopsit</option>
+  <option label="Manichiură semi">Manichiură semi</option>
+  <option label="Manichiură gel">Manichiură gel</option>
+  <option label="Manichiură construcție">Manichiură construcție</option>
+  <option label="Pedichiură">Pedichiură</option><br>
+</select>
+<br>
+<label for="zi">Zi:</label><br>
+<select id="ora">
+  <option label="Luni">Luni</option>
+  <option label="Marți">Marți </option>
+  <option label="Miercuri">Miercuri</option>
+  <option label="Joi">Joi</option>
+  <option label="Vineri">Vineri</option>
+  <option label="Sâmbătă">Sâmbătă</option>
+</select><br>
+<br>
+<label for="ora">Ora:</label><br>
+<select id="ora">
+  <option label="09:00">09:00</option>
+  <option label="10:00">10:00 </option>
+  <option label="11:00">11:00</option>
+  <option label="12:00">12:00</option>
+  <option label="13:00">13:00</option>
+  <option label="15:00">15:00</option>
+  <option label="16:00">16:00</option>
+  <option label="17:00">17:00</option>
+  <option label="18:00">18:00</option>
+</select><br>
+<br>
+<button type="button" onclick="alert('Solicitare trimisă! Confirmarea se va primi pe e-mail.')">Trimite</button>
+</div>
+<div class="infoDiv">
+    <h3>Salonul Rose</h3>
+    <p>Salonul Rose este locul ideal pentru a vă răsfăța și a vă bucura de servicii de înaltă calitate. Oferim o gamă variată de proceduri, de la tuns și vopsit, până la manichiură și pedichiură. Echipa noastră de profesioniști este dedicată să vă ofere o experiență de neuitat, folosind produse de top și tehnici moderne.</p>
+    <p>Ne străduim să creăm un mediu plăcut și relaxant, unde fiecare client se simte special. Vă invităm să ne vizitați și să descoperiți diferența pe care o face atenția noastră la detalii și pasiunea pentru frumusețe.</p>
+    <p>Contactați-ne pentru a programa o vizită și pentru a afla mai multe despre ofertele și pachetele noastre speciale.</p>
+    <h3>Despre Noi</h3>
+        <p>Salonul Rose a fost deschis în anul 2020, cu misiunea de a aduce o notă de eleganță și rafinament în domeniul înfrumusețării. Fondat de Maria Popescu, un expert cu peste 15 ani de experiență în industria frumuseții, salonul a devenit rapid un loc de referință pentru cei care doresc servicii de calitate superioară.</p>
+        <p>Cu un design modern și un ambient relaxant, Salonul Rose este conceput pentru a oferi clienților o experiență unică de relaxare și răsfăț. De la prima întâlnire, veți simți că sunteți în mâini bune, echipa noastră fiind pregătită să vă ofere cele mai bune sfaturi și servicii personalizate.</p>
+        <p>În cei câțiva ani de la deschidere, ne-am extins portofoliul de servicii și am investit constant în echipamente și produse de ultima generație, pentru a ne asigura că rămânem în fruntea tendințelor din domeniu.</p>
+</div>
+</div>
+</html>
